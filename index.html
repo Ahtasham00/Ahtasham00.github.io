@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahtasham | Portfolio</title>
+
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#0ea5e9',
+              secondary: '#22c55e'
+            },
+          }
+        }
+      }
+    </script>
+
+    <!-- Devicon for tech stack icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+
+    <meta name="description" content="Python Developer | AI & Web Security Enthusiast - Portfolio of Ahtasham" />
+</head>
+<body class="bg-slate-950 text-slate-100 selection:bg-primary/30 selection:text-white">
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-slate-950/70 border-b border-slate-800">
+        <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
+            <a href="#hero" class="font-semibold tracking-wide text-white">Ahtasham</a>
+            <div class="hidden md:flex items-center gap-6 text-slate-300">
+                <a class="hover:text-white transition" href="#about">About</a>
+                <a class="hover:text-white transition" href="#skills">Skills</a>
+                <a class="hover:text-white transition" href="#projects">Projects</a>
+                <a class="hover:text-white transition" href="#contact">Contact</a>
+            </div>
+            <a href="#contact" class="md:inline-flex hidden px-4 py-2 rounded-md bg-primary/90 hover:bg-primary text-white text-sm font-medium shadow-sm transition">Hire Me</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative overflow-hidden">
+        <div class="absolute inset-0 -z-10 bg-gradient-to-b from-sky-900/30 via-slate-900 to-slate-950"></div>
+        <div class="max-w-6xl mx-auto px-4 py-20 md:py-28 grid md:grid-cols-2 gap-10 items-center">
+            <div class="space-y-6">
+                <p class="text-primary font-medium">Hi, I'm</p>
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+                    Ahtasham
+                </h1>
+                <p class="text-xl md:text-2xl text-slate-300">Software & Data Engineer | AI & Secure Backend Development</p>
+                <p class="text-slate-300 max-w-xl">I design and develop scalable backend systems, data pipelines, and AI-powered solutions with a focus on security</p>
+                <div class="flex flex-wrap gap-3 pt-2">
+                    <a href="#projects" class="px-5 py-3 rounded-md bg-primary hover:bg-sky-500 text-white font-medium shadow transition">View Projects</a>
+                    <a href="#contact" class="px-5 py-3 rounded-md border border-slate-700 hover:border-slate-500 text-slate-100 font-medium transition">Contact Me</a>
+                </div>
+            </div>
+            <div class="md:justify-self-end w-full">
+                <div class="relative mx-auto h-60 w-60 md:h-72 md:w-72 rounded-full bg-gradient-to-tr from-primary/30 to-secondary/30 p-1">
+                    <img src="assets/profile/profile.jpg" alt="Ahtasham profile" class="h-full w-full rounded-full object-cover bg-slate-900 border border-slate-800" />
+                </div>
+                <div class="mt-6 flex items-center gap-4 text-slate-400 w-60 md:w-72 mx-auto justify-center">
+                    <i class="devicon-python-plain colored text-3xl"></i>
+                    <i class="devicon-csharp-plain colored text-3xl"></i>
+                    <i class="devicon-html5-plain colored text-3xl"></i>
+                    <i class="devicon-css3-plain colored text-3xl"></i>
+                    <i class="devicon-linux-plain text-slate-200 text-3xl"></i>
+                    <i class="devicon-github-original text-slate-200 text-3xl"></i>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="max-w-6xl mx-auto px-4 py-20">
+        <div class="grid md:grid-cols-1 gap-10 items-start">
+            <div class="space-y-4">
+                <div class="space-y-4">
+                    <h2 class="text-3xl font-bold">About Me</h2>
+                    <p class="text-slate-300">
+                        I am a Software Developer specializing in secure web development, automation, and AI-powered applications.
+                        Skilled in Python, ASP.NET Core, FastAPI, and AI integrations, I enjoy solving problems by making data useful and systems robust.
+                        I hold a BS in Computer Science from International Islamic University Islamabad (2025).
+                        I have worked on various projects, including web development, AI integrations, data pipelines, and automation.
+                        My passion lies in building reliable, secure, and intelligent systems for real-world use.
+                    </p>
+                  </div>
+                  
+                <div class="flex flex-wrap gap-3 pt-2">
+                    <span class="px-3 py-1 rounded bg-slate-800 text-slate-200 text-sm">Python</span>
+                    <span class="px-3 py-1 rounded bg-slate-800 text-slate-200 text-sm">C#</span>
+                    <span class="px-3 py-1 rounded bg-slate-800 text-slate-200 text-sm">SQL</span>
+                    <span class="px-3 py-1 rounded bg-slate-800 text-slate-200 text-sm">ASP.NET Core</span>
+                    <span class="px-3 py-1 rounded bg-slate-800 text-slate-200 text-sm">Fast Api</span>
+                    <span class="px-3 py-1 rounded bg-slate-800 text-slate-200 text-sm">LangChain</span>
+                    <span class="px-3 py-1 rounded bg-slate-800 text-slate-200 text-sm">Selenium</span>
+                    <span class="px-3 py-1 rounded bg-slate-800 text-slate-200 text-sm">Linux</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<!-- Skills -->
+<section id="skills" class="bg-slate-900/60 border-y border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 py-20">
+      <h2 class="text-3xl font-bold mb-10">Skills</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+  
+        <!-- Languages -->
+        <div class="p-5 rounded-lg bg-slate-900 border border-slate-800">
+          <h3 class="font-semibold mb-3">Languages</h3>
+          <ul class="text-slate-300 space-y-1">
+            <li>Python, C#, SQL, HTML, CSS</li>
+          </ul>
+        </div>
+  
+        <!-- Frameworks & Libraries -->
+        <div class="p-5 rounded-lg bg-slate-900 border border-slate-800">
+          <h3 class="font-semibold mb-3">Frameworks & Libraries</h3>
+          <ul class="text-slate-300 space-y-1">
+            <li>ASP.NET Core, FastAPI, Flask, Tailwind CSS, Selenium, Requests, BeautifulSoup</li>
+          </ul>
+        </div>
+  
+        <!-- Web Automation & Scraping -->
+        <div class="p-5 rounded-lg bg-slate-900 border border-slate-800">
+          <h3 class="font-semibold mb-3">Web Automation & Scraping</h3>
+          <ul class="text-slate-300 space-y-1">
+            <li>Selenium, Requests, BeautifulSoup</li>
+          </ul>
+        </div>
+  
+        <!-- AI & LLMs -->
+        <div class="p-5 rounded-lg bg-slate-900 border border-slate-800">
+          <h3 class="font-semibold mb-3">AI & LLMs</h3>
+          <ul class="text-slate-300 space-y-1">
+            <li>OpenAI, Gemini, DeepSeek, LangChain</li>
+          </ul>
+        </div>
+
+  
+        <!-- Databases -->
+        <div class="p-5 rounded-lg bg-slate-900 border border-slate-800">
+          <h3 class="font-semibold mb-3">Databases</h3>
+          <ul class="text-slate-300 space-y-1">
+            <li>MySQL, MS SQL Server</li>
+          </ul>
+        </div>
+
+        <!-- Security Tools -->
+        <div class="p-5 rounded-lg bg-slate-900 border border-slate-800">
+            <h3 class="font-semibold mb-3">Security Tools</h3>
+            <ul class="text-slate-300 space-y-1">
+              <li>Burp Suite</li>
+            </ul>
+          </div>
+
+        <!-- Other Tools & Skills -->
+        <!-- Other Tools & Skills -->
+        <div class="p-5 rounded-lg bg-slate-900 border border-slate-800 lg:col-span-3 md:col-span-2">
+            <h3 class="font-semibold mb-3">Other Tools & Skills</h3>
+            <ul class="text-slate-300 space-y-1">
+              <li>Pandas, NumPy, Linux, Git & GitHub</li>
+            </ul>
+          </div>
+  
+          
+  
+      </div>
+    </div>
+  </section>
+  
+
+    <!-- Projects -->
+    <section id="projects" class="max-w-6xl mx-auto px-4 py-20">
+        <div class="flex items-center justify-between mb-8">
+            <h2 class="text-3xl font-bold">Projects</h2>
+            <a href="#contact" class="text-primary hover:underline">Need a custom build?</a>
+        </div>
+        <div class="grid md:grid-cols-2 gap-6 items-stretch">
+            <!-- Project Card 1 -->
+<!-- Project Card 1 -->
+<article class="group h-full rounded-xl border border-slate-800 bg-slate-900 overflow-hidden hover:border-slate-700 transition flex flex-col">
+    <div class="relative aspect-video bg-slate-800/60 overflow-hidden" data-slider data-images="assets/projects/card1/1.jpg,assets/projects/card1/2.jpg,assets/projects/card1/3.jpg">
+      <img alt="AI-based Learning Management System screenshots"
+        class="h-full w-full object-cover opacity-90 group-hover:opacity-100 transition" />
+      <button type="button" class="absolute left-2 top-1/2 -translate-y-1/2 bg-slate-900/60 hover:bg-slate-900/80 text-white px-2 py-1 rounded" data-prev>‹</button>
+      <button type="button" class="absolute right-2 top-1/2 -translate-y-1/2 bg-slate-900/60 hover:bg-slate-900/80 text-white px-2 py-1 rounded" data-next>›</button>
+      <div class="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1" data-dots></div>
+    </div>
+  
+    <div class="p-5 space-y-3 flex flex-col flex-grow">
+      <h3 class="text-xl font-semibold">AI-based Learning Management System</h3>
+      <p class="text-slate-400 text-sm italic">Final Year University Project</p>
+      <p class="text-slate-300 flex-1">
+        A Learning Management System with integrated AI features for automatic quiz generation, and live session summarization.
+        Built with <strong>ASP.NET Web API</strong> (EF Core, MS SQL Server) and <strong>FastAPI</strong> microservices for AI workflows.
+        <em>DeepSeek</em> was used for intelligent search and recommendation capabilities, while <strong>FastAPI</strong> powered quiz generation and live session summaries.
+      </p>
+  
+      <div class="flex flex-wrap gap-2 text-xs">
+        <span class="px-2 py-1 rounded bg-slate-800">ASP.NET Web API</span>
+        <span class="px-2 py-1 rounded bg-slate-800">EF Core</span>
+        <span class="px-2 py-1 rounded bg-slate-800">MS SQL Server</span>
+        <span class="px-2 py-1 rounded bg-slate-800">FastAPI</span>
+        <span class="px-2 py-1 rounded bg-slate-800">DeepSeek</span>
+      </div>
+  
+      <!-- Footer pinned to bottom -->
+      <div class="pt-1 flex gap-4 items-center mt-auto">
+        <a class="text-primary hover:underline js-open-video" href="#" data-video="assets/videos/1.mp4">Demo</a>
+        <span class="ml-auto text-xs text-slate-400">Role: Lead Developer</span>
+      </div>
+    </div>
+  </article>
+  
+  
+  <!-- Project Card 2 -->
+  <article class="group h-full rounded-xl border border-slate-800 bg-slate-900 overflow-hidden hover:border-slate-700 transition flex flex-col">
+    <div class="relative aspect-video bg-slate-800/60 overflow-hidden" data-slider data-images="assets/projects/card2/1.jpg,assets/projects/card2/2.jpg,assets/projects/card2/3.jpg">
+      <img alt="ETL Pipeline screenshots" class="h-full w-full object-cover opacity-90 group-hover:opacity-100 transition" />
+      <button type="button" class="absolute left-2 top-1/2 -translate-y-1/2 bg-slate-900/60 hover:bg-slate-900/80 text-white px-2 py-1 rounded" data-prev>‹</button>
+      <button type="button" class="absolute right-2 top-1/2 -translate-y-1/2 bg-slate-900/60 hover:bg-slate-900/80 text-white px-2 py-1 rounded" data-next>›</button>
+      <div class="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1" data-dots></div>
+    </div>
+  
+    <div class="p-5 space-y-3 flex flex-col flex-grow">
+      <h3 class="text-xl font-semibold">ETL Pipeline for API & Email Data</h3>
+      <p class="text-slate-400 text-sm italic">Final Year University Project</p>
+      <p class="text-slate-300 flex-1">
+        Developed a modular data pipeline to fetch structured and unstructured data from multiple sources, including
+        public Web APIs and Gmail API. Automated the ingestion process using <strong>cron jobs</strong> to fetch
+        large datasets on a daily basis, store them in <strong>PostgreSQL</strong>, and generate daily CSV reports for analytics.
+      </p>
+  
+      <div class="flex flex-wrap gap-2 text-xs">
+        <span class="px-2 py-1 rounded bg-slate-800">Playwright</span>
+        <span class="px-2 py-1 rounded bg-slate-800">BeautifulSoup</span>
+        <span class="px-2 py-1 rounded bg-slate-800">PostgreSQL</span>
+        <span class="px-2 py-1 rounded bg-slate-800">Gmail API</span>
+        <span class="px-2 py-1 rounded bg-slate-800">Cron</span>
+        <span class="px-2 py-1 rounded bg-slate-800">CSV Automation</span>
+      </div>
+  
+      <!-- Footer pinned to bottom -->
+      <div class="pt-1 flex gap-4 items-center mt-auto">
+        <span class="ml-auto text-xs text-slate-400">Role: Data Engineer</span>
+      </div>
+    </div>
+  </article>
+
+  <!-- Project Card 3 -->
+<article class="group h-full rounded-xl border border-slate-800 bg-slate-900 overflow-hidden hover:border-slate-700 transition flex flex-col">
+    <div class="relative aspect-video bg-slate-800/60 overflow-hidden" data-slider data-images="assets/projects/card3/1.jpg,assets/projects/card3/2.jpg,assets/projects/card3/3.jpg">
+      <img alt="NL2SQL application screenshots"
+        class="h-full w-full object-cover opacity-90 group-hover:opacity-100 transition" />
+      <button type="button" class="absolute left-2 top-1/2 -translate-y-1/2 bg-slate-900/60 hover:bg-slate-900/80 text-white px-2 py-1 rounded" data-prev>‹</button>
+      <button type="button" class="absolute right-2 top-1/2 -translate-y-1/2 bg-slate-900/60 hover:bg-slate-900/80 text-white px-2 py-1 rounded" data-next>›</button>
+      <div class="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1" data-dots></div>
+    </div>
+  
+    <div class="p-5 space-y-3 flex flex-col flex-grow">
+      <h3 class="text-xl font-semibold">NL2SQL: Natural Language to SQL</h3>
+      <p class="text-slate-400 text-sm italic">AI-Powered Query Engine</p>
+      <p class="text-slate-300 flex-1">
+        An intelligent system that converts natural language queries into SQL commands. 
+        <strong>Gemini LLM</strong> is prompted with database schema and user queries, 
+        producing optimized SQL statements executed on <strong>MySQL</strong>. 
+        Results are displayed in a <strong>Streamlit</strong> interface with clean visualizations. 
+        <strong>LangChain</strong> was used for prompt orchestration and query validation.
+      </p>
+  
+      <div class="flex flex-wrap gap-2 text-xs">
+        <span class="px-2 py-1 rounded bg-slate-800">Gemini LLM</span>
+        <span class="px-2 py-1 rounded bg-slate-800">LangChain</span>
+        <span class="px-2 py-1 rounded bg-slate-800">MySQL</span>
+        <span class="px-2 py-1 rounded bg-slate-800">Streamlit</span>
+      </div>
+  
+      <!-- Footer pinned to bottom -->
+      <div class="pt-1 flex gap-4 items-center mt-auto">
+        <a class="text-primary hover:underline js-open-video" href="#" data-video="assets/videos/2.mp4">Demo</a>
+        <span class="ml-auto text-xs text-slate-400">Role: Lead Developer</span>
+      </div>
+    </div>
+  </article>
+  <!-- Project Card 4 -->
+<article
+class="group h-full rounded-xl border border-slate-800 bg-slate-900 overflow-hidden hover:border-slate-700 transition flex flex-col">
+<div class="relative aspect-video bg-slate-800/60 overflow-hidden" data-slider data-images="assets/projects/card4/1.jpg,assets/projects/card4/2.jpg,assets/projects/card4/3.jpg">
+  <img alt="Restaurant menu nutrition analyzer screenshots" class="h-full w-full object-cover opacity-90 group-hover:opacity-100 transition" />
+  <button type="button" class="absolute left-2 top-1/2 -translate-y-1/2 bg-slate-900/60 hover:bg-slate-900/80 text-white px-2 py-1 rounded" data-prev>‹</button>
+  <button type="button" class="absolute right-2 top-1/2 -translate-y-1/2 bg-slate-900/60 hover:bg-slate-900/80 text-white px-2 py-1 rounded" data-next>›</button>
+  <div class="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1" data-dots></div>
+</div>
+
+<div class="p-5 space-y-3 flex flex-col flex-grow">
+  <h3 class="text-xl font-semibold">Restaurant Menu Nutrition Analyzer</h3>
+  <p class="text-slate-400 text-sm italic">AI-Driven Data Processing</p>
+  <p class="text-slate-300 flex-1">
+    A Python-based application that processes restaurant menu CSV files.  
+    Menu items and descriptions are extracted and analyzed using the
+    <strong>DeepSeek API</strong> to estimate nutritional values.  
+    Enriched data is stored in a new CSV file, followed by intelligent 
+    <strong>filtering</strong> to deliver refined nutritional insights.  
+    This project showcases end-to-end data processing and integration of 
+    <strong>LLM-powered enrichment</strong> with structured datasets.
+  </p>
+
+  <div class="flex flex-wrap gap-2 text-xs">
+    <span class="px-2 py-1 rounded bg-slate-800">Python</span>
+    <span class="px-2 py-1 rounded bg-slate-800">DeepSeek API</span>
+    <span class="px-2 py-1 rounded bg-slate-800">CSV Processing</span>
+    <span class="px-2 py-1 rounded bg-slate-800">Data Filtering</span>
+  </div>
+
+  <!-- Footer pinned to bottom -->
+  <div class="pt-1 flex gap-4 items-center mt-auto">
+    <span class="ml-auto text-xs text-slate-400">Role: Developer</span>
+  </div>
+</div>
+</article>
+
+        </div>
+    </section>
+
+    <!-- Video Modal -->
+    <div id="video-modal" class="fixed inset-0 z-50 hidden items-center justify-center">
+        <div class="absolute inset-0 bg-black/70" data-video-backdrop></div>
+        <div class="relative w-[92vw] max-w-4xl aspect-video bg-black rounded-lg shadow-xl overflow-hidden">
+            <button type="button" class="absolute -top-10 right-0 text-white/80 hover:text-white" data-video-close>Close ✕</button>
+            <video id="video-player" class="h-full w-full" controls></video>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <section id="contact" class="max-w-6xl mx-auto px-4 py-20">
+        <div class="grid md:grid-cols-2 gap-10 items-start">
+            <div>
+                <h2 class="text-3xl font-bold mb-4">Contact</h2>
+                <p class="text-slate-300 mb-6">Feel free to reach out for collaborations or opportunities.</p>
+                <ul class="space-y-3 text-slate-300">
+                    <li>Email: <a class="text-primary hover:underline" href="mailto:ahtasham7776@gmail.com">ahtasham7776@gmail.com</a></li>
+                    <li>LinkedIn: <a class="text-primary hover:underline" href="http://www.linkedin.com/in/ahtasham-ghazanfar-a65a97223" target="_blank" rel="noreferrer">linkedin.com/in/ahtasham-ghazanfar</a></li>
+                    <li>GitHub: <a class="text-primary hover:underline" href="https://github.com/Ahtasham00" target="_blank" rel="noreferrer">Ahtasham00</a></li>
+                </ul>
+            </div>
+            <form class="p-6 rounded-xl bg-slate-900 border border-slate-800 space-y-4" 
+      action="https://formspree.io/f/xqadwlqy" method="POST">
+  
+  <div>
+    <label class="block text-sm mb-1" for="name">Name</label>
+    <input id="name" name="name" type="text" 
+           class="w-full px-3 py-2 rounded bg-slate-800 border border-slate-700 focus:outline-none focus:ring-2 focus:ring-primary" 
+           placeholder="Your name" required />
+  </div>
+
+  <div>
+    <label class="block text-sm mb-1" for="email">Email</label>
+    <input id="email" name="email" type="email" 
+           class="w-full px-3 py-2 rounded bg-slate-800 border border-slate-700 focus:outline-none focus:ring-2 focus:ring-primary" 
+           placeholder="you@example.com" required />
+  </div>
+
+  <div>
+    <label class="block text-sm mb-1" for="message">Message</label>
+    <textarea id="message" name="message" rows="4" 
+              class="w-full px-3 py-2 rounded bg-slate-800 border border-slate-700 focus:outline-none focus:ring-2 focus:ring-primary" 
+              placeholder="How can I help?" required></textarea>
+  </div>
+
+  <button type="submit" 
+          class="w-full px-4 py-2 rounded-md bg-secondary hover:bg-emerald-500 text-white font-medium transition">
+    Send
+  </button>
+</form>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 py-8 text-sm text-slate-400 flex flex-col md:flex-row items-center justify-between gap-3">
+            <p>© <span id="year"></span> Ahtasham. All rights reserved.</p>
+            <div class="flex items-center gap-4">
+                <a href="#projects" class="hover:text-white">Projects</a>
+                <a href="#contact" class="hover:text-white">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Simple slider initializer for elements with data-slider (with autoplay)
+        document.querySelectorAll('[data-slider]').forEach(function(container){
+          var img = container.querySelector('img');
+          var images = (container.getAttribute('data-images') || '').split(',').map(function(s){ return s.trim(); }).filter(Boolean);
+          if(images.length === 0){ return; }
+          var index = 0;
+          var autoplayMs = 3500; // change speed if needed
+          var timerId = null;
+
+          function render(){
+            img.src = images[index];
+            var dots = container.querySelector('[data-dots]');
+            if(dots){
+              dots.innerHTML = '';
+              images.forEach(function(_, i){
+                var dot = document.createElement('button');
+                dot.type = 'button';
+                dot.className = 'h-2 w-2 rounded-full ' + (i === index ? 'bg-white' : 'bg-white/50 hover:bg-white/70');
+                dot.addEventListener('click', function(){ index = i; render(); });
+                dots.appendChild(dot);
+              });
+            }
+          }
+
+          var prev = container.querySelector('[data-prev]');
+          var next = container.querySelector('[data-next]');
+          if(prev){ prev.addEventListener('click', function(){ index = (index - 1 + images.length) % images.length; render(); }); }
+          if(next){ next.addEventListener('click', function(){ index = (index + 1) % images.length; render(); }); }
+
+          function startAutoplay(){
+            stopAutoplay();
+            timerId = setInterval(function(){
+              index = (index + 1) % images.length;
+              render();
+            }, autoplayMs);
+          }
+
+          function stopAutoplay(){
+            if(timerId){ clearInterval(timerId); timerId = null; }
+          }
+
+          container.addEventListener('mouseenter', stopAutoplay);
+          container.addEventListener('mouseleave', startAutoplay);
+
+          render();
+          startAutoplay();
+        });
+
+        // Modal video player
+        (function(){
+          var modal = document.getElementById('video-modal');
+          if(!modal) return;
+          var player = document.getElementById('video-player');
+          var backdrop = modal.querySelector('[data-video-backdrop]');
+          var btnClose = modal.querySelector('[data-video-close]');
+
+          function openModal(src){
+            if(player){
+              player.src = src;
+              player.currentTime = 0;
+              player.play().catch(function(){});
+            }
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.classList.add('overflow-hidden');
+          }
+
+          function closeModal(){
+            if(player){
+              player.pause();
+              player.removeAttribute('src');
+              player.load();
+            }
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.classList.remove('overflow-hidden');
+          }
+
+          document.querySelectorAll('.js-open-video').forEach(function(link){
+            link.addEventListener('click', function(e){
+              e.preventDefault();
+              var src = link.getAttribute('data-video');
+              if(src) openModal(src);
+            });
+          });
+
+          if(backdrop){ backdrop.addEventListener('click', closeModal); }
+          if(btnClose){ btnClose.addEventListener('click', closeModal); }
+          document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeModal(); });
+        })();
+    </script>
+</body>
+</html>
+
+
